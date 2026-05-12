@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+        <span class="brand-mark">P</span>
+        <span>
+          <strong>Portfolio</strong>
+          <small>BTS SIO / Alternance</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav-link active" href="#accueil">Accueil</a>
+        <a class="nav-link" href="#entreprise">Entreprise</a>
+        <a class="nav-link" href="#activites">Activites</a>
+        <a class="nav-link" href="#projet">Projet</a>
+        <a class="nav-link" href="#veille">Veille techno</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-section hero-section active" id="accueil" data-page>
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio professionnel</p>
+          <h1>RAO Noah</h1>
+          <p class="lead">
+            Alternant informatique, je presente mon parcours, mon entreprise et mes
+            realisations techniques.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#entreprise">Voir mon parcours</a>
+            <a class="button secondary" href="#projet">Voir mes projets</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Apercu du portfolio">
+          <div class="profile-card">
+            <div class="profile-content">
+              <span class="profile-kicker">Entreprise</span>
+              <h2>INTERWAY</h2>
+              <p>Alternant informatique</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section content-section" id="entreprise" data-page>
+        <div class="section-heading">
+          <p class="eyebrow">Contexte professionnel</p>
+          <h2>Entreprise</h2>
+          <p>
+            Presente l'organisation, son secteur d'activite, son fonctionnement et ton role
+            au sein de l'equipe.
+          </p>
+        </div>
+
+        <div class="two-column">
+          <article class="info-block">
+            <h3>Presentation</h3>
+            <p>
+              Remplace ce texte par une description de l'entreprise : nom, activite,
+              clients, taille, localisation et missions principales.
+            </p>
+          </article>
+          <article class="info-block image-block">
+            <span class="image-label">Entreprise</span>
+          </article>
+        </div>
+
+        <div class="detail-grid">
+          <article>
+            <h3>Secteur</h3>
+            <p>Informatique, services numeriques, support, developpement ou autre.</p>
+          </article>
+          <article>
+            <h3>Equipe</h3>
+            <p>Explique les roles, les outils utilises et l'organisation du travail.</p>
+          </article>
+          <article>
+            <h3>Mon role</h3>
+            <p>Detaille tes responsabilites, ton perimetre et les competences mobilisees.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section content-section" id="activites" data-page>
+        <div class="section-heading">
+          <p class="eyebrow">Experience terrain</p>
+          <h2>Activites dans l'entreprise</h2>
+          <p>
+            Structure tes missions realisees pendant l'alternance ou le stage, avec les
+            outils, les objectifs et les resultats.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Mission 01</span>
+            <h3>Support utilisateur</h3>
+            <p>Diagnostic, resolution d'incidents, suivi des tickets et communication.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Mission 02</span>
+            <h3>Developpement ou automatisation</h3>
+            <p>Creation d'outils, correction de bugs, scripts ou ameliorations internes.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">Mission 03</span>
+            <h3>Documentation</h3>
+            <p>Redaction de procedures, guides utilisateurs et comptes rendus techniques.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section content-section" id="projet" data-page>
+        <div class="section-heading">
+          <p class="eyebrow">Realisation technique</p>
+          <h2>Projet</h2>
+          <p>
+            Presente un projet important : besoin initial, solution retenue, technologies,
+            difficultes rencontrees et competences acquises.
+          </p>
+        </div>
+
+        <div class="project-layout">
+          <article class="project-card">
+            <span class="project-tag" data-project-label>Projet principal</span>
+            <h3 data-project-title>Nom du projet</h3>
+            <p data-project-description>
+              Decris ici le projet : objectif, contexte, utilisateurs concernes et valeur
+              apportee.
+            </p>
+            <ul class="check-list" data-project-steps>
+              <li>Analyse du besoin</li>
+              <li>Conception de la solution</li>
+              <li>Developpement et tests</li>
+              <li>Bilan et ameliorations possibles</li>
+            </ul>
+          </article>
+
+          <aside class="tech-stack" aria-label="Technologies utilisees">
+            <h3>Technologies</h3>
+            <div class="stack-list" data-project-techs>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+              <span>Git</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="project-admin">
+          <button class="button secondary admin-login" type="button" hidden>Modifier le projet</button>
+
+          <form class="admin-panel" hidden>
+            <div class="admin-heading">
+              <div>
+                <p class="eyebrow">Mode edition</p>
+                <h3>Modifier l'onglet Projet</h3>
+              </div>
+              <button class="button secondary admin-logout" type="button">Verrouiller</button>
+            </div>
+
+            <label>
+              Titre du projet
+              <input type="text" name="title" data-edit-field="title" />
+            </label>
+
+            <label>
+              Description
+              <textarea name="description" rows="4" data-edit-field="description"></textarea>
+            </label>
+
+            <label>
+              Etapes, une par ligne
+              <textarea name="steps" rows="5" data-edit-field="steps"></textarea>
+            </label>
+
+            <label>
+              Technologies, separees par des virgules
+              <input type="text" name="techs" data-edit-field="techs" />
+            </label>
+
+            <div class="admin-actions">
+              <button class="button primary" type="submit">Enregistrer</button>
+              <button class="button secondary admin-reset" type="button">Reinitialiser</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="page-section content-section" id="veille" data-page>
+        <div class="section-heading">
+          <p class="eyebrow">Culture technique</p>
+          <h2>Veille technologique</h2>
+          <p>
+            Regroupe tes sources, ton theme de veille, les informations importantes et
+            l'impact de ces tendances sur ton metier.
+          </p>
+        </div>
+
+        <div class="watch-grid">
+          <article>
+            <h3>Theme</h3>
+            <p>Exemple : cybersecurite, intelligence artificielle, cloud, developpement web.</p>
+          </article>
+          <article>
+            <h3>Sources</h3>
+            <p>Sites officiels, newsletters, blogs techniques, podcasts, documentation.</p>
+          </article>
+          <article>
+            <h3>Synthese</h3>
+            <p>Explique les evolutions observees et ce qu'elles changent concretement.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Portfolio de RAO Noah</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
