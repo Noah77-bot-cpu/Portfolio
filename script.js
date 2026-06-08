@@ -2,23 +2,24 @@ const navLinks = [...document.querySelectorAll(".nav-link")];
 const pages = [...document.querySelectorAll("[data-page]")];
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
+const defaultPage = "veille";
 const adminCode = "rao2026";
-const projectStorageKey = "portfolio-project-content";
+const projectStorageKey = "portfolio-project-content-v2";
 const defaultProject = {
-  title: "Nom du projet",
+  title: "MyCheckOut - Solution de Caisse Mobile Économique",
   description:
-    "Decris ici le projet : objectif, contexte, utilisateurs concernes et valeur apportee.",
+    "Développement d'une interface web mobile permettant aux collaborateurs de scanner des articles et d'encaisser les clients directement en rayon, réduisant l'attente en caisse centrale. Conçu pour être utilisé en mode SaaS par des petites structures.",
   steps: [
-    "Analyse du besoin",
-    "Conception de la solution",
-    "Developpement et tests",
-    "Bilan et ameliorations possibles",
+    "Étude de faisabilité",
+    "Modélisation Base de Données (UML)",
+    "Développement PHP/Laravel",
+    "Tests et déploiement MVP",
   ],
-  techs: ["HTML", "CSS", "JavaScript", "SQL", "Git"],
+  techs: ["PHP/Laravel", "JS", "SQL", "Git", "HTML/CSS"],
 };
 
 function showPage(pageId) {
-  const targetId = pageId || "accueil";
+  const targetId = pageId || defaultPage;
 
   pages.forEach((page) => {
     page.classList.toggle("active", page.id === targetId);
@@ -28,20 +29,24 @@ function showPage(pageId) {
     link.classList.toggle("active", link.getAttribute("href") === `#${targetId}`);
   });
 
-  mainNav.classList.remove("open");
-  navToggle.setAttribute("aria-expanded", "false");
+  if (mainNav && navToggle) {
+    mainNav.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
 }
 
 function syncFromHash() {
   const pageId = window.location.hash.replace("#", "");
   const pageExists = pages.some((page) => page.id === pageId);
-  showPage(pageExists ? pageId : "accueil");
+  showPage(pageExists ? pageId : defaultPage);
 }
 
-navToggle.addEventListener("click", () => {
-  const isOpen = mainNav.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 window.addEventListener("hashchange", syncFromHash);
 syncFromHash();
@@ -162,7 +167,7 @@ adminPanel.addEventListener("submit", (event) => {
   const project = readAdminForm();
   saveProject(project);
   renderProject(project);
-  window.alert("Projet enregistre sur ce navigateur.");
+  window.alert("Projet enregistré sur ce navigateur.");
 });
 
 resetButton.addEventListener("click", () => {
