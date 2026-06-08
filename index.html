@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Base</title>
+    <title>Portfolio professionnel - RAO Noah</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     <header class="site-header">
       <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
         <span class="brand-mark">P</span>
-        <span>
+        <span class="brand-copy">
           <strong>Portfolio</strong>
           <small>BTS SIO / Alternance</small>
         </span>
@@ -29,94 +29,125 @@
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-        <a class="nav-link active" href="#accueil">Accueil</a>
+        <a class="nav-link" href="#accueil">Accueil</a>
         <a class="nav-link" href="#entreprise">Entreprise</a>
-        <a class="nav-link" href="#activites">Activites</a>
+        <a class="nav-link" href="#activites">Activités</a>
         <a class="nav-link" href="#projet">Projet</a>
-        <a class="nav-link" href="#veille">Veille techno</a>
+        <a class="nav-link active" href="#veille">Veille techno</a>
       </nav>
     </header>
 
     <main>
-      <section class="page-section hero-section active" id="accueil" data-page>
+      <section class="page-section hero-section" id="accueil" data-page>
         <div class="hero-copy">
           <p class="eyebrow">Portfolio professionnel</p>
           <h1>RAO Noah</h1>
           <p class="lead">
-            Alternant informatique, je presente mon parcours, mon entreprise et mes
-            realisations techniques.
+            Alternant informatique, je présente mon parcours, mes missions terrain et mes
+            réalisations techniques dans un environnement de support, réseau et services
+            managés.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#entreprise">Voir mon parcours</a>
+            <a class="button primary" href="#entreprise">Découvrir INTERWAY</a>
             <a class="button secondary" href="#projet">Voir mes projets</a>
           </div>
         </div>
 
-        <div class="hero-panel" aria-label="Apercu du portfolio">
-          <div class="profile-card">
-            <div class="profile-content">
-              <span class="profile-kicker">Entreprise</span>
-              <h2>INTERWAY</h2>
-              <p>Alternant informatique</p>
+        <aside class="hero-panel" aria-label="Aperçu de l'entreprise">
+          <div class="interway-card">
+            <span class="panel-kicker">Entreprise</span>
+            <div class="interway-logo" aria-label="Logo INTERWAY stylisé">
+              <span>INTER</span><strong>WAY</strong>
+            </div>
+            <p>Alternant informatique</p>
+            <div class="signal-row" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section class="page-section content-section" id="entreprise" data-page>
         <div class="section-heading">
-          <p class="eyebrow">Contexte professionnel</p>
-          <h2>INTERWAY</h2>
+          <p class="eyebrow">INTERWAY</p>
+          <h2>Contexte professionnel</h2>
           <p>
-            INTERWAY est une societe de services informatiques implantee en France et
-            en Europe. Elle accompagne les entreprises dans la gestion, le deploiement
-            et la maintenance de leurs systemes d'information.
+            INTERWAY est une société de services informatiques implantée en France et
+            en Europe. Elle accompagne les entreprises dans la gestion, le déploiement,
+            la maintenance et l'exploitation de leurs systèmes d'information.
           </p>
         </div>
 
         <div class="two-column">
           <article class="info-block">
-            <h3>Presentation de l'entreprise</h3>
+            <h3>Présentation de l'entreprise</h3>
             <p>
-              Depuis plus de 33 ans, INTERWAY accompagne ses clients sur leurs besoins
-              technologiques. Membre du groupe Sogetrel, l'entreprise compte plus de
-              1 100 collaborateurs et propose des services manages autour du support,
-              de l'infogerance, du deploiement, de la maintenance terrain et des
-              processus metiers externalises.
+              Membre du groupe Sogetrel, INTERWAY intervient sur des services managés :
+              service desk, infogérance, maintenance field, déploiement, logistique et
+              solutions digitales pour les points de vente. Parmi ses références, on
+              retrouve notamment Carrefour, Leroy Merlin, Decathlon, McDonald's ou KFC.
+            </p>
+            <p>
+              Cette organisation donne un cadre concret à mon alternance : tickets,
+              diagnostic réseau, documentation, contact utilisateur et suivi des
+              incidents jusqu'à leur résolution.
             </p>
           </article>
-          <article class="info-block image-block">
-            <span class="image-label">INTERWAY</span>
+
+          <article class="ops-illustration" aria-label="Illustration ludique support IT et réseau">
+            <div class="ops-board">
+              <div class="ticket-widget">
+                <span>Alliance #2048</span>
+                <strong>Incident accès Wi-Fi</strong>
+                <small>Diagnostic : ping + tracert</small>
+              </div>
+              <div class="network-map" aria-hidden="true">
+                <span class="node node-a"></span>
+                <span class="node node-b"></span>
+                <span class="node node-c"></span>
+                <span class="node node-d"></span>
+              </div>
+              <div class="desk-widget">
+                <span class="screen-mini"></span>
+                <span class="keyboard-mini"></span>
+                <span class="tpe-mini"></span>
+              </div>
+              <div class="status-widget">
+                <span></span>
+                <strong>Support N1</strong>
+                <small>Ticket résolu</small>
+              </div>
+            </div>
+            <span class="ops-caption">Support IT / Réseau / Maintenance terrain</span>
           </article>
         </div>
 
         <div class="detail-grid">
           <article>
-            <h3>Secteur d'activite</h3>
+            <span class="detail-icon network-icon" aria-hidden="true"></span>
+            <h3>Secteur d'activité</h3>
             <p>
-              INTERWAY intervient dans les services numeriques, les reseaux WAN, LAN et
-              SD-WAN, le Wi-Fi, la monetique, les bornes interactives, l'affichage
-              dynamique, les lockers connectes et les solutions digitales pour les
-              entreprises.
+              Réseaux WAN, LAN, SD-WAN, Wi-Fi, monétique et solutions digitales
+              destinées aux entreprises et aux points de vente.
             </p>
           </article>
           <article>
-            <h3>Organisation et services</h3>
+            <span class="detail-icon support-icon" aria-hidden="true"></span>
+            <h3>Organisation</h3>
             <p>
-              L'entreprise s'appuie sur plusieurs expertises : service desk,
-              maintenance field, supervision, infogerance, integration, logistique et
-              deploiement national. Elle gere notamment de grands parcs informatiques
-              et accompagne des secteurs comme le retail, le transport, l'hotellerie et
-              les collectivites.
+              Support desk, supervision, maintenance field, intégration, logistique et
+              déploiement national sur des parcs informatiques étendus.
             </p>
           </article>
           <article>
-            <h3>Mon role</h3>
+            <span class="detail-icon role-icon" aria-hidden="true"></span>
+            <h3>Mon rôle</h3>
             <p>
-              En alternance chez INTERWAY, je developpe mes competences en environnement
-              professionnel : support informatique, analyse des besoins, suivi des
-              incidents, documentation technique et participation aux activites de
-              l'equipe.
+              Analyse des demandes, suivi d'incidents, documentation technique,
+              accompagnement utilisateur et participation aux activités support.
             </p>
           </article>
         </div>
@@ -124,70 +155,115 @@
 
       <section class="page-section content-section" id="activites" data-page>
         <div class="section-heading">
-          <p class="eyebrow">Experience terrain</p>
-          <h2>Activites dans l'entreprise</h2>
+          <p class="eyebrow">Expérience terrain</p>
+          <h2>Missions en entreprise</h2>
           <p>
-            Structure tes missions realisees pendant l'alternance ou le stage, avec les
-            outils, les objectifs et les resultats.
+            Une synthèse claire des activités réalisées pendant l'alternance, orientée
+            support utilisateur, déploiement et documentation opérationnelle.
           </p>
         </div>
 
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-date">Mission 01</span>
-            <h3>Support utilisateur</h3>
-            <p>Diagnostic, resolution d'incidents, suivi des tickets et communication.</p>
+            <div class="timeline-content">
+              <div class="mission-heading">
+                <h3>Support utilisateur</h3>
+                <span class="tool-badge alliance-badge">Alliance</span>
+              </div>
+              <p>
+                Gestion d'incidents Niveau 1 via Alliance. Diagnostic réseau avec ping et
+                tracert, résolution de problèmes d'accès et de périphériques sur parc
+                d'entreprises Retail.
+              </p>
+            </div>
           </article>
+
           <article class="timeline-item">
             <span class="timeline-date">Mission 02</span>
-            <h3>Developpement ou automatisation</h3>
-            <p>Creation d'outils, correction de bugs, scripts ou ameliorations internes.</p>
+            <div class="timeline-content">
+              <div class="mission-heading">
+                <h3>Déploiement</h3>
+                <span class="mini-tpe" aria-label="Terminal de paiement stylisé"></span>
+              </div>
+              <p>
+                Installation et configuration de postes pour les nouveaux collaborateurs.
+                Intégration dans le domaine Active Directory, installation des logiciels
+                métiers et déploiement de terminaux de paiement (TPE).
+              </p>
+            </div>
           </article>
+
           <article class="timeline-item">
             <span class="timeline-date">Mission 03</span>
-            <h3>Documentation</h3>
-            <p>Redaction de procedures, guides utilisateurs et comptes rendus techniques.</p>
+            <div class="timeline-content">
+              <div class="mission-heading">
+                <h3>Documentation</h3>
+                <span class="doc-chip">Procédures</span>
+              </div>
+              <p>
+                Rédaction de guides utilisateurs pour le self-service et de procédures
+                de dépannage réseau interne pour l'équipe support.
+              </p>
+            </div>
           </article>
         </div>
       </section>
 
       <section class="page-section content-section" id="projet" data-page>
         <div class="section-heading">
-          <p class="eyebrow">Realisation technique</p>
+          <p class="eyebrow">Réalisation technique</p>
           <h2>Projet</h2>
           <p>
-            Presente un projet important : besoin initial, solution retenue, technologies,
-            difficultes rencontrees et competences acquises.
+            Un projet orienté usage terrain : réduire l'attente en caisse et proposer
+            une solution mobile accessible aux petites structures.
           </p>
         </div>
 
         <div class="project-layout">
           <article class="project-card">
             <span class="project-tag" data-project-label>Projet principal</span>
-            <h3 data-project-title>Nom du projet</h3>
+            <h3 data-project-title>MyCheckOut - Solution de Caisse Mobile Économique</h3>
             <p data-project-description>
-              Decris ici le projet : objectif, contexte, utilisateurs concernes et valeur
-              apportee.
+              Développement d'une interface web mobile permettant aux collaborateurs de
+              scanner des articles et d'encaisser les clients directement en rayon,
+              réduisant l'attente en caisse centrale. Conçu pour être utilisé en mode
+              SaaS par des petites structures.
             </p>
             <ul class="check-list" data-project-steps>
-              <li>Analyse du besoin</li>
-              <li>Conception de la solution</li>
-              <li>Developpement et tests</li>
-              <li>Bilan et ameliorations possibles</li>
+              <li>Étude de faisabilité</li>
+              <li>Modélisation Base de Données (UML)</li>
+              <li>Développement PHP/Laravel</li>
+              <li>Tests et déploiement MVP</li>
             </ul>
           </article>
 
-          <aside class="tech-stack" aria-label="Technologies utilisees">
-            <h3>Technologies</h3>
-            <div class="stack-list" data-project-techs>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>SQL</span>
-              <span>Git</span>
+          <aside class="project-preview" aria-label="Aperçu mobile MyCheckOut">
+            <div class="phone-mockup">
+              <div class="phone-top"></div>
+              <div class="checkout-screen">
+                <span class="screen-label">MyCheckOut</span>
+                <strong>Panier</strong>
+                <div class="scan-line"></div>
+                <div class="cart-row"><span>Article scanné</span><b>12,90 €</b></div>
+                <div class="cart-row"><span>Accessoire</span><b>7,40 €</b></div>
+                <div class="total-row"><span>Total</span><b>20,30 €</b></div>
+                <button type="button">Encaisser</button>
+              </div>
             </div>
           </aside>
         </div>
+
+        <aside class="tech-stack" aria-label="Technologies utilisées">
+          <h3>Technologies</h3>
+          <div class="stack-list" data-project-techs>
+            <span>PHP/Laravel</span>
+            <span>JS</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>HTML/CSS</span>
+          </div>
+        </aside>
 
         <div class="project-admin">
           <button class="button secondary admin-login" type="button" hidden>Modifier le projet</button>
@@ -195,7 +271,7 @@
           <form class="admin-panel" hidden>
             <div class="admin-heading">
               <div>
-                <p class="eyebrow">Mode edition</p>
+                <p class="eyebrow">Mode édition</p>
                 <h3>Modifier l'onglet Projet</h3>
               </div>
               <button class="button secondary admin-logout" type="button">Verrouiller</button>
@@ -212,45 +288,91 @@
             </label>
 
             <label>
-              Etapes, une par ligne
+              Étapes, une par ligne
               <textarea name="steps" rows="5" data-edit-field="steps"></textarea>
             </label>
 
             <label>
-              Technologies, separees par des virgules
+              Technologies, séparées par des virgules
               <input type="text" name="techs" data-edit-field="techs" />
             </label>
 
             <div class="admin-actions">
               <button class="button primary" type="submit">Enregistrer</button>
-              <button class="button secondary admin-reset" type="button">Reinitialiser</button>
+              <button class="button secondary admin-reset" type="button">Réinitialiser</button>
             </div>
           </form>
         </div>
       </section>
 
-      <section class="page-section content-section" id="veille" data-page>
-        <div class="section-heading">
-          <p class="eyebrow">Culture technique</p>
-          <h2>Veille technologique</h2>
+      <section class="page-section content-section active" id="veille" data-page>
+        <div class="section-heading watch-heading">
+          <p class="eyebrow">Veille technologique</p>
+          <h2>L'évolution du SoftPOS (Software Point-of-Sale)</h2>
           <p>
-            Regroupe tes sources, ton theme de veille, les informations importantes et
-            l'impact de ces tendances sur ton metier.
+            Le SoftPOS transforme un smartphone compatible NFC en terminal
+            d'encaissement, sans boîtier de paiement dédié.
           </p>
         </div>
 
         <div class="watch-grid">
-          <article>
-            <h3>Theme</h3>
-            <p>Exemple : cybersecurite, intelligence artificielle, cloud, developpement web.</p>
+          <article class="watch-card theme-card">
+            <span class="watch-number">01</span>
+            <h3>Thème</h3>
+            <p>
+              Le SoftPOS permet à un commerçant d'encaisser une carte bancaire ou un
+              wallet mobile directement sur smartphone grâce au NFC. L'application joue
+              le rôle d'interface de caisse et transmet la transaction de façon sécurisée.
+            </p>
+            <ul class="compact-list">
+              <li>Encaissement sans TPE physique</li>
+              <li>Activation rapide sur mobile</li>
+              <li>Usage adapté au retail, pop-up store et mobilité</li>
+            </ul>
           </article>
-          <article>
-            <h3>Sources</h3>
-            <p>Sites officiels, newsletters, blogs techniques, podcasts, documentation.</p>
+
+          <article class="watch-card visual-card">
+            <span class="watch-number">02</span>
+            <h3>Images & exemples</h3>
+            <div class="softpos-photo">
+              <img src="assets_portfolio/softpos-nfc.jpg" alt="Paiement NFC sur smartphone SoftPOS avec carte bancaire" />
+              <span>Paiement NFC en cours</span>
+            </div>
+
+            <div class="comparison-panel">
+              <div class="comparison-photo">
+                <img src="assets_portfolio/tpe-contactless.jpg" alt="Terminal de paiement physique avec carte bancaire" />
+                <strong>TPE physique</strong>
+              </div>
+              <div class="softpos-device" aria-label="Smartphone SoftPOS stylisé">
+                <div class="softpos-screen">
+                  <span>SoftPOS</span>
+                  <b>18,50 €</b>
+                  <small>Carte détectée</small>
+                </div>
+                <strong>Smartphone NFC</strong>
+              </div>
+            </div>
+
+            <div class="solution-logos" aria-label="Exemples de solutions SoftPOS">
+              <span class="phos-logo">phos <small>by Ingenico</small></span>
+              <span class="stripe-logo">stripe <small>Terminal</small></span>
+            </div>
           </article>
-          <article>
-            <h3>Synthese</h3>
-            <p>Explique les evolutions observees et ce qu'elles changent concretement.</p>
+
+          <article class="watch-card synthesis-card">
+            <span class="watch-number">03</span>
+            <h3>Synthèse</h3>
+            <p>
+              L'intérêt principal est économique et opérationnel : moins de matériel à
+              acheter, une mise en service plus souple et une meilleure capacité à
+              encaisser hors de la caisse centrale.
+            </p>
+            <div class="impact-list">
+              <div><strong>- coûts</strong><span>Réduction de l'équipement dédié</span></div>
+              <div><strong>+ flexibilité</strong><span>Encaissement en rayon ou en déplacement</span></div>
+              <div><strong>+ déploiement</strong><span>Activation logicielle plus rapide</span></div>
+            </div>
           </article>
         </div>
       </section>
