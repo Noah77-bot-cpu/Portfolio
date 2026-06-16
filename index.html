@@ -308,72 +308,171 @@
       <section class="page-section content-section active" id="veille" data-page>
         <div class="section-heading watch-heading">
           <p class="eyebrow">Veille technologique</p>
-          <h2>L'évolution du SoftPOS (Software Point-of-Sale)</h2>
+          <h2>SD-WAN : L'avenir des réseaux d'entreprise</h2>
           <p>
-            Le SoftPOS transforme un smartphone compatible NFC en terminal
-            d'encaissement, sans boîtier de paiement dédié.
+            Le SD-WAN (Software-Defined WAN) transforme l'architecture réseau en
+            offrant une gestion centralisée, flexible et économique des connexions WAN.
           </p>
         </div>
 
         <div class="watch-grid">
           <article class="watch-card theme-card">
             <span class="watch-number">01</span>
-            <h3>Thème</h3>
+            <h3>Le SD-WAN expliqué</h3>
             <p>
-              Le SoftPOS permet à un commerçant d'encaisser une carte bancaire ou un
-              wallet mobile directement sur smartphone grâce au NFC. L'application joue
-              le rôle d'interface de caisse et transmet la transaction de façon sécurisée.
+              Le SD-WAN remplace l'approche traditionnelle des routeurs spécialisés par
+              une solution logicielle virtualisée. Une console centrale gère tous les
+              sites d'entreprise et optimise le routage du trafic en temps réel sur
+              plusieurs types de connexions (Internet, MPLS, LTE).
             </p>
             <ul class="compact-list">
-              <li>Encaissement sans TPE physique</li>
-              <li>Activation rapide sur mobile</li>
-              <li>Usage adapté au retail, pop-up store et mobilité</li>
+              <li>Architecture virtualisée et programmable</li>
+              <li>Gestion centralisée de tous les sites</li>
+              <li>Optimisation intelligente du routage</li>
+              <li>Support multi-connexions simultanées</li>
             </ul>
           </article>
 
           <article class="watch-card visual-card">
             <span class="watch-number">02</span>
-            <h3>Images & exemples</h3>
-            <div class="softpos-photo">
-              <img src="assets_portfolio/softpos-nfc.jpg" alt="Paiement NFC sur smartphone SoftPOS avec carte bancaire" />
-              <span>Paiement NFC en cours</span>
-            </div>
-
-            <div class="comparison-panel">
-              <div class="comparison-photo">
-                <img src="assets_portfolio/tpe-contactless.jpg" alt="Terminal de paiement physique avec carte bancaire" />
-                <strong>TPE physique</strong>
+            <h3>Architecture & comparaison</h3>
+            
+            <div class="architecture-comparison">
+              <div class="arch-column">
+                <strong>WAN Traditionnel</strong>
+                <svg viewBox="0 0 200 200" class="arch-diagram">
+                  <rect x="10" y="10" width="180" height="180" fill="none" stroke="#ddd" stroke-width="2" rx="8"/>
+                  <circle cx="100" cy="50" r="25" fill="#ff6b6b" stroke="#c92a2a" stroke-width="2"/>
+                  <text x="100" y="55" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Hub</text>
+                  
+                  <line x1="100" y1="75" x2="50" y2="120" stroke="#666" stroke-width="2"/>
+                  <circle cx="50" cy="140" r="18" fill="#4dabf7" stroke="#1971c2" stroke-width="2"/>
+                  <text x="50" y="145" text-anchor="middle" font-size="10" fill="white">Site 1</text>
+                  
+                  <line x1="100" y1="75" x2="100" y2="120" stroke="#666" stroke-width="2"/>
+                  <circle cx="100" cy="140" r="18" fill="#4dabf7" stroke="#1971c2" stroke-width="2"/>
+                  <text x="100" y="145" text-anchor="middle" font-size="10" fill="white">Site 2</text>
+                  
+                  <line x1="100" y1="75" x2="150" y2="120" stroke="#666" stroke-width="2"/>
+                  <circle cx="150" cy="140" r="18" fill="#4dabf7" stroke="#1971c2" stroke-width="2"/>
+                  <text x="150" y="145" text-anchor="middle" font-size="10" fill="white">Site 3</text>
+                </svg>
+                <small>Routeurs spécialisés, circuits MPLS coûteux</small>
               </div>
-              <div class="softpos-device" aria-label="Smartphone SoftPOS stylisé">
-                <div class="softpos-screen">
-                  <span>SoftPOS</span>
-                  <b>18,50 €</b>
-                  <small>Carte détectée</small>
+              
+              <div class="arch-column">
+                <strong>SD-WAN</strong>
+                <svg viewBox="0 0 200 200" class="arch-diagram">
+                  <rect x="10" y="10" width="180" height="180" fill="none" stroke="#ddd" stroke-width="2" rx="8"/>
+                  <rect x="70" y="15" width="60" height="40" fill="#51cf66" stroke="#2b8a3e" stroke-width="2" rx="4"/>
+                  <text x="100" y="42" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Console</text>
+                  
+                  <circle cx="50" cy="110" r="22" fill="#ffd43b" stroke="#fab005" stroke-width="2"/>
+                  <text x="50" y="115" text-anchor="middle" font-size="10" fill="black" font-weight="bold">Int.</text>
+                  
+                  <circle cx="100" cy="110" r="22" fill="#ffd43b" stroke="#fab005" stroke-width="2"/>
+                  <text x="100" y="115" text-anchor="middle" font-size="10" fill="black" font-weight="bold">4G</text>
+                  
+                  <circle cx="150" cy="110" r="22" fill="#ffd43b" stroke="#fab005" stroke-width="2"/>
+                  <text x="150" y="115" text-anchor="middle" font-size="10" fill="black" font-weight="bold">MPLS</text>
+                  
+                  <line x1="50" y1="135" x2="50" y2="160" stroke="#666" stroke-width="2"/>
+                  <circle cx="50" cy="170" r="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+                  
+                  <line x1="100" y1="135" x2="100" y2="160" stroke="#666" stroke-width="2"/>
+                  <circle cx="100" cy="170" r="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+                  
+                  <line x1="150" y1="135" x2="150" y2="160" stroke="#666" stroke-width="2"/>
+                  <circle cx="150" cy="170" r="12" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+                </svg>
+                <small>Console centralisée, multi-connexions, routeurs virtuels</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="watch-card benefits-card">
+            <span class="watch-number">03</span>
+            <h3>Avantages clés</h3>
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <span class="benefit-icon">💰</span>
+                <div>
+                  <strong>Réduction des coûts</strong>
+                  <p>Remplace les circuits MPLS coûteux par Internet standard</p>
                 </div>
-                <strong>Smartphone NFC</strong>
               </div>
-            </div>
-
-            <div class="solution-logos" aria-label="Exemples de solutions SoftPOS">
-              <span class="phos-logo">phos <small>by Ingenico</small></span>
-              <span class="stripe-logo">stripe <small>Terminal</small></span>
+              <div class="benefit-item">
+                <span class="benefit-icon">⚡</span>
+                <div>
+                  <strong>Performance optimisée</strong>
+                  <p>Routage intelligent et équilibrage de charge automatique</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🎛️</span>
+                <div>
+                  <strong>Gestion centralisée</strong>
+                  <p>Configuration de tout le réseau depuis une console unique</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">📈</span>
+                <div>
+                  <strong>Scalabilité</strong>
+                  <p>Ajout facile de nouveaux sites sans infrastructure complexe</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🔄</span>
+                <div>
+                  <strong>Flexibilité</strong>
+                  <p>Support multi-connexions (Internet, MPLS, 4G/LTE) simultanées</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🔒</span>
+                <div>
+                  <strong>Sécurité renforcée</strong>
+                  <p>Chiffrement intégré et segmentation du trafic</p>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="watch-card synthesis-card">
-            <span class="watch-number">03</span>
-            <h3>Synthèse</h3>
+            <span class="watch-number">04</span>
+            <h3>Impact professionnel & tendances</h3>
             <p>
-              L'intérêt principal est économique et opérationnel : moins de matériel à
-              acheter, une mise en service plus souple et une meilleure capacité à
-              encaisser hors de la caisse centrale.
+              Le SD-WAN transforme les métiers IT en déplaçant la gestion vers une
+              approche logicielle et centralisée. Les administrateurs réseau passent de
+              la maintenance matérielle à la gestion d'infrastructure programmable.
             </p>
-            <div class="impact-list">
-              <div><strong>- coûts</strong><span>Réduction de l'équipement dédié</span></div>
-              <div><strong>+ flexibilité</strong><span>Encaissement en rayon ou en déplacement</span></div>
-              <div><strong>+ déploiement</strong><span>Activation logicielle plus rapide</span></div>
+            <div class="trend-highlights">
+              <div class="trend-item">
+                <strong>📊 Adoption rapide</strong>
+                <span>Accélération 2024-2026 chez les entreprises distribuées</span>
+              </div>
+              <div class="trend-item">
+                <strong>🔗 Convergence</strong>
+                <span>Intégration SD-WAN + Cloud + Sécurité Zero Trust</span>
+              </div>
+              <div class="trend-item">
+                <strong>🎯 Compétences</strong>
+                <span>Shift vers APIs, programmabilité et orchestration</span>
+              </div>
             </div>
           </article>
+        </div>
+
+        <div class="watch-sources">
+          <h3>Sources de veille</h3>
+          <ul>
+            <li>Documentation officielle : Cisco Meraki, Fortinet FortiGate, Palo Alto Networks Prisma SD-WAN</li>
+            <li>Gartner Magic Quadrant for WAN Edge Infrastructure</li>
+            <li>Sites techniques : NetworkComputing, TechTarget, InfoQ</li>
+            <li>Blogs spécialisés en infrastructure réseau</li>
+            <li>Certifications : Cisco SD-WAN, Fortinet NSE</li>
+          </ul>
         </div>
       </section>
     </main>
