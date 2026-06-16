@@ -1367,6 +1367,36 @@ p {
 
 /* SD-WAN Veille Technologique Styles */
 
+.intro-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.6;
+  margin-bottom: 18px !important;
+}
+
+.feature-highlight {
+  padding: 14px;
+  margin: 18px 0;
+  background: rgba(15, 107, 95, 0.06);
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+}
+
+.feature-highlight strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.feature-highlight p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
 .architecture-comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1375,80 +1405,92 @@ p {
 }
 
 .arch-column {
-  padding: 20px;
+  padding: 18px;
   background: var(--surface-soft);
   border: 1px solid var(--line);
   border-radius: 8px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .arch-column strong {
   display: block;
-  margin-bottom: 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text);
+  font-weight: 700;
 }
 
 .arch-column small {
   display: block;
-  margin-top: 12px;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .arch-diagram {
   width: 100%;
-  height: 180px;
-  max-width: 200px;
+  height: 160px;
+  max-width: 180px;
   margin: 0 auto;
 }
 
 .benefits-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 24px 0 0;
+  gap: 14px;
+  margin: 20px 0 0;
 }
 
 .benefit-item {
   display: flex;
-  gap: 12px;
-  padding: 16px;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
   background: var(--surface-soft);
   border: 1px solid var(--line);
   border-radius: 8px;
   align-items: flex-start;
 }
 
+.benefit-item.flex-row {
+  flex-direction: row;
+  align-items: center;
+}
+
 .benefit-icon {
-  flex-shrink: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .benefit-item strong {
   display: block;
-  margin-bottom: 4px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--primary);
+  font-weight: 700;
+  margin: 0;
 }
 
 .benefit-item p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 .trend-highlights {
   display: grid;
   gap: 12px;
-  margin: 24px 0 0;
+  margin: 20px 0 0;
 }
 
 .trend-item {
   display: flex;
   flex-direction: column;
+  gap: 6px;
   padding: 14px;
   background: var(--surface-soft);
   border-left: 3px solid var(--primary);
@@ -1457,9 +1499,10 @@ p {
 
 .trend-item strong {
   display: block;
-  margin-bottom: 6px;
+  font-size: 0.9rem;
   color: var(--text);
-  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .trend-item span {
@@ -1467,7 +1510,7 @@ p {
   color: var(--muted);
   font-size: 0.85rem;
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .watch-sources {
@@ -1481,8 +1524,9 @@ p {
 .watch-sources h3 {
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text);
+  font-weight: 700;
 }
 
 .watch-sources ul {
@@ -1495,7 +1539,7 @@ p {
   margin-bottom: 10px;
   color: var(--text);
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 860px) {
@@ -1509,10 +1553,13 @@ p {
 
   .benefit-item {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .benefit-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
   }
 }
